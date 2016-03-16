@@ -1,0 +1,22 @@
+<!doctype html>
+<title>Day 8 Task</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='_style_.css')}}'>
+<div class=page>
+  <h1>Get stock prices from Quandl</h1>
+  <div class=metanav>
+
+<h4>
+Please enter a Stock symbol (Eg. GOOG)
+</h4>
+
+<form id='userinputform' method='post' action='index_page' > <!-- action is the URL you want to move to next-->
+   <p>
+   Ticker: <input type='text' name='ticker_symbol' />
+   </p>
+   <p>
+   <input type='submit' value='Submit' /> <!-- value is the text that will appear on the button. -->
+   </p>
+</form>
+
+</div>
+</div>
