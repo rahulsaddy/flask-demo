@@ -12,6 +12,10 @@ app = Flask(__name__)
 app.vars={}
 ticker = 'XXXX'
 
+@app.route('/')
+def main():
+  return redirect('/index_page')
+
 @app.route('/index_page',methods=['GET','POST'])
 def index_page():
     if request.method == 'GET':
