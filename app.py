@@ -78,9 +78,10 @@ def quandl_search():
   
   except urllib2.HTTPError, err:
     if err.code == 404:
-      print "This symbol is not avaiable on Quandl Wiki"
-    else:
-      print "Oops!! Something is wrong ... sorry"
+      #print "This symbol is not avaiable on Quandl Wiki"
+	  return render_template('error.html')
+    #else:
+     # print "Oops!! Something is wrong ... sorry"
 	  
 	
 if __name__ == "__main__":
